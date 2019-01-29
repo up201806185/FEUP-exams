@@ -20,7 +20,7 @@ COURSES_IDS = {
     "MIEQ"   : "745"
 }
 
-def FEUP_exams(course_id, filter_list, date_cutoff = None):
+def FEUP_exams(course_id, filter_list = [], date_cutoff = None):
     assert type(course_id) == str, "The argument 'course_id' has to be a string"
     assert course_id in COURSES_IDS.values(), "The ID {0} is not valid.".format(course_id)
 
