@@ -56,8 +56,10 @@ pprint(FEUP_exams(COURSES_IDS["MIEIC"])) #If the second argument is not specifie
 from FEUP_exams import FEUP_exams, COURSES_IDS
 from pprint import pprint
 
-pprint(FEUP_exams(COURSES_IDS["MIEIC"], ["MDIS", "AOCO"]))#If you only want certain units, you can specify them as a list in the second argument
+pprint(FEUP_exams(COURSES_IDS["MIEIC"], ["MDIS", "AOCO"]))#If you only want certain units,
+# you can specify them as a list as the second argument
 
+#Output
 [{'Week_day': 'Quarta',
   'hours': ('13:30', '16:30'),
   'rooms': ('B104', 'B201'),
@@ -72,4 +74,23 @@ pprint(FEUP_exams(COURSES_IDS["MIEIC"], ["MDIS", "AOCO"]))#If you only want cert
   'unit_initials': 'MDIS',
   'unit_name': 'Matemática Discreta',
   'url': 'https://sigarra.up.pt/feup/pt/exa_geral.exame_view?p_exa_id=40979'}]
+```
+
+```py
+from FEUP_exams import FEUP_exams, COURSES_IDS
+from pprint import pprint
+from datetime import datetime
+
+pprint(FEUP_exams(COURSES_IDS["MIEIC"], ["MDIS", "AOCO"], datetime(2019, 2, 1)))
+#You can also specify a cutoff date, after which no more tests are added to the output
+#In this example, I'm excluding all the exams that are taken after 2019-Feb-1
+
+#Output
+[{'Week_day': 'Quarta',
+  'hours': ('13:30', '16:30'),
+  'rooms': ('B104', 'B201'),
+  'timestamp': datetime.datetime(2019, 1, 30, 13, 30),
+  'unit_initials': 'AOCO',
+  'unit_name': 'Arquitectura e Organização de Computadores',
+  'url': 'https://sigarra.up.pt/feup/pt/exa_geral.exame_view?p_exa_id=40968'}]
 ```
