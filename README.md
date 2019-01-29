@@ -4,7 +4,7 @@ This script saves the html of the page as a '.txt' and will use it as a cache. Y
 Feel free to use this script:)
 
 
-#Usage
+### Usage
 
 ```py
 from FEUP_exams import FEUP_exams, COURSES_IDS
