@@ -51,5 +51,6 @@ if __name__ == "__main__":
     from FEUP_exams import FEUP_exams, COURSES_IDS
     print_exams_list(
         FEUP_exams(COURSES_IDS["MIEIC"])
-        input()
     )
+
+    input()
