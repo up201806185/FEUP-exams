@@ -52,3 +52,4 @@ if __name__ == "__main__":
     print_exams_list(
         FEUP_exams(COURSES_IDS["MIEIC"])
     )
+    input()
