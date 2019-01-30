@@ -103,7 +103,8 @@ exams_list = FEUP_exams(COURSES_IDS["MIEIC"])
 
 print_exams_list(exams_list) #This function prints the exams as a nice-looking table
 
-print_exams_list(exams_list, "PT") #You can have the table in portuguese if you wish (english is the default language)
+print_exams_list(exams_list, "PT") #You can have the table in portuguese if you wish 
+                                   #(english is the default language)
 
 # output
 #    day       week day    unit    start - finish       exam rooms
