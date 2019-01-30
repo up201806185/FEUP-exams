@@ -47,10 +47,16 @@ def print_exams_list(exams_list, language = "EN"):
     print(table.draw())
     print()
 
-if __name__ == "__main__":
+if __name__ == "__main__":#My personal use
     from FEUP_exams import FEUP_exams, COURSES_IDS
+    from datetime import datetime
+
     print_exams_list(
-        FEUP_exams(COURSES_IDS["MIEIC"])
+        FEUP_exams(
+            COURSES_IDS["MIEIC"],
+            ["MDIS", "AOCO", "FPRO", "ALGE", "AMAT"]
+            ),
+    "PT"
     )
 
     input()
