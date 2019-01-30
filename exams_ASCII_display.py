@@ -45,6 +45,7 @@ def print_exams_list(exams_list, language = "EN"):
     table.add_rows(table_list)
 
     print(table.draw())
+    print()
 
 if __name__ == "__main__":
     from FEUP_exams import FEUP_exams, COURSES_IDS
