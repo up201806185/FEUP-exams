@@ -52,11 +52,6 @@ def personal_use():
     from FEUP_exams import FEUP_exams, COURSES_IDS
     from datetime import datetime
 
-    from time import sleep
-    from threading import Thread
-    from sys import exit
-
-
     print_exams_list(
         FEUP_exams(
             COURSES_IDS["MIEIC"],
@@ -65,25 +60,7 @@ def personal_use():
     "PT"
     )
 
-    kill_program = True
-    wait_time = 180
-
-    def sleep_then_exit():
-        sleep(wait_time)
-        if kill_program:
-            exit()
-    
-    timer = Thread(target = sleep_then_exit)
-    timer.start()
-
-    print("Enter anything to stop the program from automatically closing in {0} seconds".format(str(wait_time)))
-
-    if input() == "":
-        exit()
-    else:
-        kill_program = False
-        input()
-        exit()
+    input()
     
 if __name__ == "__main__":#My personal use
     personal_use()
