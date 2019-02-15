@@ -55,7 +55,7 @@ def personal_use():
     print_exams_list(
         FEUP_exams(
             COURSES_IDS["MIEIC"],
-            ["MDIS", "AOCO", "FPRO", "ALGE", "AMAT"]
+            ["MEST", "PROG", "FISI1", "CMAT", "MPCP"]
             ),
     "PT"
     )
