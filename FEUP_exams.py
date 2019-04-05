@@ -114,6 +114,7 @@ def exams_of_the_week(week):
             rooms_list = []
             for exam_room_html in links:
                 rooms_list.append(exam_room_html.string)
+            rooms_list.sort()
             exam_dict["rooms"] = tuple(rooms_list)
 
             match_object = re.search(r"[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]", exam_html.text)
