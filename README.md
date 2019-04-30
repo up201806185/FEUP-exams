@@ -1,6 +1,6 @@
 # FEUP-exams
 A scraper written in python, that returns all (or some of) the exams from a given course ID.
-This script saves the html of the page as a '.txt' and will use it as a cache. You can disable this feature by changing line 9 of FEUP_exams.py to 'CACHE_ENABLED = False'.
+This script saves the html of the page as a text file and will use it as a cache. You can disable this feature by changing line 9 of FEUP_exams.py to 'CACHE_ENABLED = False'.
 Feel free to use this script:)
 
 
