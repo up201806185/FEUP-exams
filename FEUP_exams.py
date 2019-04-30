@@ -7,7 +7,7 @@ from time import time
 
 LINK = "https://sigarra.up.pt/feup/pt/exa_geral.mapa_de_exames?p_curso_id="
 CACHE_ENABLED = True
-CACHE_TIMEOUT = 3600 #1 hour
+CACHE_TIMEOUT = 3600 * 5 #5 hours
 
 COURSES_IDS = {
     "MIEIC"  : "742",
